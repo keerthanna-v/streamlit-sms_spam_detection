@@ -1,4 +1,4 @@
-mkdir -p ~/.streamlit-sms_spam_detection/
+mkdir -p ~/.streamlit/
 
 echo "\
 [server]\n\

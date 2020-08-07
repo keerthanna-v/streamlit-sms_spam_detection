@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 import text_processing as tp
 import warnings 
-import numpy as np
+
 
 warnings.filterwarnings('ignore')
 
@@ -11,8 +11,7 @@ model=pickle.load(open('model.pkl','rb'))
 tf=pickle.load(open('tf.pkl','rb'))
  
 
-
-def main():
+def app1():
     
     st.markdown("""<div style="background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);padding:10px">
                 <h2 style="color:white;text-align:center;"> Sms Spam Classifier App </h2>
@@ -38,4 +37,4 @@ def main():
         else:
             st.warning("Please Enter The Message Text")
 if __name__=='__main__':
-    main()
+    app1()

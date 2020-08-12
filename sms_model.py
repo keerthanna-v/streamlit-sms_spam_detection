@@ -19,7 +19,7 @@ import pickle
 import nltk
 # loading the data set
 
-data=pd.read_csv(r"C:\Users\keerthanna\spam.csv",encoding='latin')
+data=pd.read_csv(r"spam.csv",encoding='latin')
 
 data['text']=data['text'].apply(puncation)
 
